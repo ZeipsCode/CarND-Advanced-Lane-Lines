@@ -34,16 +34,12 @@ The goals / steps of this project are the following:
 ---
 
 ### Writeup / README
-
-#### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one.  You can submit your writeup as markdown or pdf.  [Here](https://github.com/udacity/CarND-Advanced-Lane-Lines/blob/master/writeup_template.md) is a template writeup for this project you can use as a guide and a starting point.  
-
-You're reading it!
-
+  
 ### Camera Calibration
 
 #### 1. Briefly state how you computed the camera matrix and distortion coefficients. Provide an example of a distortion corrected calibration image.
 
-The code for this step is contained in the first code cell of the IPython notebook located in "./examples/example.ipynb" (or in lines # through # of the file called `some_file.py`).  
+The code for this step is contained in the first code cell of the IPython notebook located in "./examples/example.ipynb"
 
 I start by preparing object points, which are the coordinates of the corners of the chessboard. Then i try to find the corresponding corners in the image with the opencv function 'findChessboardCorners' and store the coordinates in a list called imgpoints.
 When every corner is found i use the opencv functions 'calibrateCamera' and 'undistort' to get the camera image and then undistort the image with this matrix. 
