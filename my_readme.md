@@ -39,7 +39,7 @@ The goals / steps of this project are the following:
 
 #### 1. Briefly state how you computed the camera matrix and distortion coefficients. Provide an example of a distortion corrected calibration image.
 
-The code for this step is contained in the first code cell of the IPython notebook located in "./examples/example.ipynb"
+The code for this step is contained in the second code cell of the IPython notebook located in "./examples/example.ipynb"
 
 I start by preparing object points, which are the coordinates of the corners of the chessboard. Then i try to find the corresponding corners in the image with the opencv function 'findChessboardCorners' and store the coordinates in a list called imgpoints.
 When every corner is found i use the opencv functions 'calibrateCamera' and 'undistort' to get the camera image and then undistort the image with this matrix. 
@@ -50,7 +50,7 @@ When every corner is found i use the opencv functions 'calibrateCamera' and 'und
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
-I used a combination of color and gradient thresholds to generate a binary image (thresholding steps at lines # through # in `another_file.py`).  Here's an example of my output for this step.  (note: this is not actually from one of the test images)
+I used a combination of color and gradient thresholds to generate a binary image, which can be found in the 8th Code cell of the IPython notebook
 
 ![alt text][image3]
 
