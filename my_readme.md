@@ -23,7 +23,7 @@ The goals / steps of this project are the following:
 [image2]: ./test_images/test1.jpg "Road Transformed"
 [image3]: ./output_images/thresholded_gradient.png "Binary Example"
 [image4]: ./examples/warped_straight_lines.jpg "Warp Example"
-[image5]: ./examples/color_fit_lines.jpg "Fit Visual"
+[image5]: ./output_images/polyfit.png "Fit Visual"
 [image6]: ./examples/example_output.jpg "Output"
 [video1]: ./project_video.mp4 "Video"
 
@@ -70,13 +70,20 @@ This resulted in the following source and destination points:
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
-Then I did some other stuff and fit my lane lines with a 2nd order polynomial kinda like this:
+I am identifying the lane lines by taking the histogram of the bottom half columns of the image. There you should expect to see two peeks for left and right lane, which gives you the location in the image. Combined with a sliding window you can get a pretty good idea about where the lines are in your image. After determining the location i am fitting a 2nd order polynomial around the lane lines (code cell #13), which results in an image like this:
 
 ![alt text][image5]
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
-I did this in lines # through # in my code in `my_other_file.py`
+The radius curvature is calculated in code cell # 12. The pixel values of the lane are scaled into meters using the scaling factors defined as follows:
+
+xm_per_pix = 3.7/700  # meteres per pixel in x
+ym_per_pix = 30/720   # meters per pixel in y
+
+These values are then used to compute the polynomial coefficients in meters and then the formula given in the class is used to calculate the radius of curvature.
+
+The position of the vehicle is calculated by assuming the camera to be centered in the vehicle and checking the distance of the midpoint of the two lanes from the center of the image.
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
