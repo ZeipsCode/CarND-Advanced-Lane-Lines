@@ -78,7 +78,8 @@ I am identifying the lane lines by taking the histogram of the bottom half colum
 
 The radius curvature is calculated in code cell # 12. The pixel values of the lane are scaled into meters using the scaling factors defined as follows:
 
-xm_per_pix = 3.7/700  # meteres per pixel in x
+xm_per_pix = 3.7/700  # meters per pixel in x
+
 ym_per_pix = 30/720   # meters per pixel in y
 
 These values are then used to compute the polynomial coefficients in meters and then the formula given in the class is used to calculate the radius of curvature.
