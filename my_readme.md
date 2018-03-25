@@ -25,7 +25,7 @@ The goals / steps of this project are the following:
 [image4]: ./examples/warped_straight_lines.jpg "Warp Example"
 [image5]: ./output_images/polyfit.png "Fit Visual"
 [image6]: ./output_images/final_result.png "Output"
-[video1]: ./project_video.mp4 "Video"
+[video1]: ./output_images/output_video.mp4 "Video"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
