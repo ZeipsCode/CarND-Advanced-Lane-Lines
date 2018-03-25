@@ -24,7 +24,7 @@ The goals / steps of this project are the following:
 [image3]: ./output_images/thresholded_gradient.png "Binary Example"
 [image4]: ./examples/warped_straight_lines.jpg "Warp Example"
 [image5]: ./output_images/polyfit.png "Fit Visual"
-[image6]: ./examples/example_output.jpg "Output"
+[image6]: ./output_images/final_result.png "Output"
 [video1]: ./project_video.mp4 "Video"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
