@@ -19,10 +19,10 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/undistort_output.png "Undistorted"
+[image1]: ./output_images/undistorted.png "Undistorted"
 [image2]: ./test_images/test1.jpg "Road Transformed"
 [image3]: ./output_images/thresholded_gradient.png "Binary Example"
-[image4]: ./examples/warped_straight_lines.jpg "Warp Example"
+[image4]: ./output_images/warped_image.png "Warp Example"
 [image5]: ./output_images/polyfit.png "Fit Visual"
 [image6]: ./output_images/final_result.png "Output"
 [video1]: ./output_images/output_video.mp4 "Video"
